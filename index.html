@@ -19,7 +19,46 @@
 
 <body>
 
-    <div id="app">{{ message }}</div>
+    <div id="app"></div>
+
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-9 my-5">
+                <div class="card">
+                    <div class="slider">
+                        <img class="active" src="./assets/img/01.webp" alt="">
+                        <!-- <img src="./assets/img/02.webp" alt="">
+                        <img src="./assets/img/03.webp" alt="">
+                        <img src="./assets/img/04.webp" alt="">
+                        <img src="./assets/img/05.webp" alt=""> -->
+                        <div class="slider_description p-3">
+                            <h1>Marvel's Miles Morales</h1>
+                            <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, repellendus?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-5 p-0">
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="./assets/img/01.webp" alt="">
+                        <img src="./assets/img/02.webp" alt="">
+                        <img src="./assets/img/03.webp" alt="">
+                        <img src="./assets/img/04.webp" alt="">
+                        <img src="./assets/img/05.webp" alt="">
+                    </div>
+                    <nav>
+                        <button type="button" class="prev btn btn-light rounded-circle">
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </button>
+                        <button type="button" class="next btn btn-light rounded-circle">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

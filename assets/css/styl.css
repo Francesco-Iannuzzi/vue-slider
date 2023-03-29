@@ -1,0 +1,58 @@
+.card
+{
+    position: relative;
+}
+
+.slider > img
+{
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.slider img:not(.active)
+{
+    display: none;
+}
+
+.slider_description
+{
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.thumbnail
+{
+    height: 600px;
+    position: relative;
+}
+
+.thumbnail > img
+{
+    height: calc(100% / 5);
+    object-fit: cover;
+    width: 100%;
+}
+
+.prev
+{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+}
+
+.next
+{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+}
+
+.my_height
+{
+    height: 100%;
+}
