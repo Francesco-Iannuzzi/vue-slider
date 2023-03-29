@@ -23,13 +23,13 @@
 
         <div class="container">
 
-            <div class="row g-0">
-                <div class="col-9 my-5">
-                    <div class="card">
+            <div class="row my-5" @mouseover="stopPlay" @mouseleave="play">
+                <div class="col-9 p-0">
+                    <div class="card border-0">
 
                         <div class="slider">
                             <img :class="index === activeImage ? 'active' : ''" :src="videogame.image"
-                                v-for="(videogame, index) in videogames" alt="">
+                                v-for="(videogame, index) in videogames" :alt="videogame.title">
                             <div class="slider_description p-3">
                                 <h1 v-for="(videogame, index) in videogames">
                                     {{index === activeImage ? videogame.title :''}}
@@ -45,8 +45,8 @@
                 </div>
                 <!-- /col-9 -->
 
-                <div class="col-3 my-5 p-0">
-                    <div class="card">
+                <div class="col-3 p-0">
+                    <div class="card border-0">
 
                         <div class="thumbnail">
                             <img :class="index === activeImage ? 'active' : ''" :src="videogame.image" v-for="(videogame, index) in videogames" alt="">

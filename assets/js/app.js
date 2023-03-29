@@ -22,7 +22,7 @@ createApp({
     data() {
         return {
             activeImage: 0,
-            play: setInterval(this.next, 3000),
+            autoplay: setInterval(this.next, 3000),
             videogames: [
                 {
                     image: './assets/img/01.webp',
@@ -64,6 +64,12 @@ createApp({
             if (this.activeImage === this.videogames.length) {
                 this.activeImage = 0
             }
+        },
+        stopPlay() {
+            clearInterval(this.autoplay)
+        },
+        play() {
+            autoplay = setInterval(this.next, 3000)
         }
     }
 }).mount('#app')
