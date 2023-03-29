@@ -40,10 +40,10 @@
                             <img :class="index === activeImage ? 'active' : ''" :src="videogame.image" v-for="(videogame, index) in videogames" alt="">
                         </div>
                         <nav>
-                            <button type="button" class="prev btn btn-light rounded-circle">
+                            <button type="button" class="prev btn btn-light rounded-circle" @click="prev">
                                 <i class="fa-solid fa-arrow-up"></i>
                             </button>
-                            <button type="button" class="next btn btn-light rounded-circle">
+                            <button type="button" class="next btn btn-light rounded-circle" @click="next">
                                 <i class="fa-solid fa-arrow-down"></i>
                             </button>
                         </nav>

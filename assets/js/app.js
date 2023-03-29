@@ -50,5 +50,21 @@ createApp({
                 }
             ],
         }
+    },
+    methods:{
+        prev(){
+            //console.log('cliccato su prev');
+            this.activeImage--
+            if (this.activeImage < 0) {
+                this.activeImage = this.videogames.length - 1
+            }
+        },
+        next(){
+            //console.log('cliccato su next');
+            this.activeImage++
+            if (this.activeImage === this.videogames.length) {
+                this.activeImage = 0
+            }
+        }
     }
 }).mount('#app')
