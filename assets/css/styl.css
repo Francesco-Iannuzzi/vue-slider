@@ -38,18 +38,24 @@
     width: 100%;
 }
 
+.thumbnail  img:not(.active)
+{
+    opacity: 70%;
+}
+
+
 .prev
 {
     position: absolute;
     top: 10px;
-    left: 50%;
+    left: 40%;
 }
 
 .next
 {
     position: absolute;
     bottom: 10px;
-    left: 50%;
+    left: 40%;
 }
 
 .my_height
