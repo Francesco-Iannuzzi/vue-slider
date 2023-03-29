@@ -22,40 +22,60 @@
     <div id="app">
 
         <div class="container">
+
             <div class="row g-0">
                 <div class="col-9 my-5">
                     <div class="card">
+
                         <div class="slider">
-                            <img :class="index === activeImage ? 'active' : ''" :src="videogame.image" v-for="(videogame, index) in videogames" alt="">
+                            <img :class="index === activeImage ? 'active' : ''" :src="videogame.image"
+                                v-for="(videogame, index) in videogames" alt="">
                             <div class="slider_description p-3">
-                                <h1 v-for="(videogame, index) in videogames">{{index === activeImage ? videogame.title : ''}}</h1>
-                                <p class="m-0" v-for="(videogame, index) in videogames">{{index === activeImage ? videogame.text : ''}}</p>
+                                <h1 v-for="(videogame, index) in videogames">
+                                    {{index === activeImage ? videogame.title :''}}
+                                </h1>
+                                <p class="m-0" v-for="(videogame, index) in videogames">
+                                    {{index === activeImage ? videogame.text : ''}}
+                                </p>
                             </div>
                         </div>
+                        <!-- /slider -->
+
                     </div>
                 </div>
+                <!-- /col-9 -->
+
                 <div class="col-3 my-5 p-0">
                     <div class="card">
+
                         <div class="thumbnail">
                             <img :class="index === activeImage ? 'active' : ''" :src="videogame.image" v-for="(videogame, index) in videogames" alt="">
                         </div>
+                        <!-- /thumbnail -->
+
                         <nav>
                             <button type="button" class="prev btn btn-light rounded-circle" @click="prev">
                                 <i class="fa-solid fa-arrow-up"></i>
                             </button>
+                            <!-- /prev -->
+
                             <button type="button" class="next btn btn-light rounded-circle" @click="next">
                                 <i class="fa-solid fa-arrow-down"></i>
                             </button>
+                            <!-- /next -->
                         </nav>
+                        <!-- /navigation buttons -->
+
                     </div>
                 </div>
+                <!-- /col-3 -->
+
             </div>
         </div>
+        <!-- /container -->
 
     </div>
-
-    
-
+    <!-- /app -->
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- /vue script -->
