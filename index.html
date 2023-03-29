@@ -28,8 +28,8 @@
                         <div class="slider">
                             <img :class="index === activeImage ? 'active' : ''" :src="videogame.image" v-for="(videogame, index) in videogames" alt="">
                             <div class="slider_description p-3">
-                                <h1>Marvel's Spiderman</h1>
-                                <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, repellendus?</p>
+                                <h1 v-for="(videogame, index) in videogames">{{index === activeImage ? videogame.title : ''}}</h1>
+                                <p class="m-0" v-for="(videogame, index) in videogames">{{index === activeImage ? videogame.text : ''}}</p>
                             </div>
                         </div>
                     </div>
