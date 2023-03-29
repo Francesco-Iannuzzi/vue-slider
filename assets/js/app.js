@@ -22,6 +22,7 @@ createApp({
     data() {
         return {
             activeImage: 0,
+            play: setInterval(this.next, 3000),
             videogames: [
                 {
                     image: './assets/img/01.webp',
