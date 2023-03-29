@@ -69,7 +69,7 @@ createApp({
             clearInterval(this.autoplay)
         },
         play() {
-            autoplay = setInterval(this.next, 3000)
+            this.autoplay = setInterval(this.next, 3000)
         }
     }
 }).mount('#app')
