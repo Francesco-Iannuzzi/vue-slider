@@ -70,6 +70,9 @@ createApp({
         },
         play() {
             this.autoplay = setInterval(this.next, 3000)
+        },
+        changeImage(index) {
+            this.activeImage = index
         }
     }
 }).mount('#app')
